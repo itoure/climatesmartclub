@@ -1,0 +1,137 @@
+/* ==========================================================================
+   PRODUCTS
+   ========================================================================== */
+
+	.product_holder{
+		clear: both;
+	}
+
+	.product_item_holder{
+
+		.featured_image{
+			margin-bottom: 20px;
+		}
+
+		.product_info h5 {
+			font-size: 18px;
+
+			a{
+				text-decoration: none;
+			}
+		}
+
+		.product_info_footer{
+			border-style: solid;
+			border-width: 1px 0 0 0;
+			//use color border-color;
+			padding-top: 10px;
+			width: calc(100% - 30px);
+			position: absolute;
+			bottom:5px;
+			min-height: 42px;
+			text-align: right;
+
+			.price, .action_buttons{
+				display: inline-block;
+			}
+
+			a{
+				//use color font-color;
+				text-decoration: none;			
+			}
+
+			a:before{
+				margin-right: 5px;
+				padding-left: 0;
+				text-align: left;
+				width: auto;				
+			}
+
+			a:hover{
+				//use color primary-color-as-font-color;
+			}	
+
+			> *:first-child {
+				float: left;
+			}
+
+		}
+	}
+
+	/* in grid view */
+	.border_grid .product_item_holder{
+		padding-bottom: 35px;
+	}
+
+	/* in masonry view */
+	.masonry .product_item_holder{
+		padding-bottom: 35px;
+
+		.product_info_footer{
+			border-width: 1px 0;
+		}	
+	}	
+
+	/* in carousel view */
+	.product-carousel .product_item_holder{
+
+		padding-bottom: 25px;
+
+		.product_info h5 {
+			font-size: 15px;
+		}
+		.product_info_footer{
+			min-height: 42px;
+			width: 100%;
+			bottom: 0;
+		}	
+		
+	}	
+
+	/* price */
+	p.price,.product_info_footer p.price{
+
+		ins{
+			text-decoration: none;
+		}
+
+		del{
+			//use color secondary-font-color;
+		}
+
+	}
+
+	.product_info_footer .price, .single-products p.price{
+		@include icon("\e70c");
+	}
+
+	.single-products .product-summary p.price{
+		font-size: 16px;
+		padding: 10px 0;
+		border-style: solid;
+		border-width: 0 0 1px 0;
+		//use color border-color;	
+	}
+
+	/* product meta */
+	.product_meta{
+		margin-top: 10px;
+		padding-top: 10px;
+		border-style: solid;
+		border-width: 1px 0 0 0;
+		font-size: smaller;
+		//use color border-color;		
+	}
+
+	.product_content_row{
+		margin-top: 20px !important;
+
+		.rt_tabs.tab-style-1 .tab_nav{
+			border-top-width: 1px;
+		}
+	}
+
+	/* product tabs */
+	.product_content_row .rt_tabs.tab-style-1 .tab_content_wrapper .tab_content{
+		padding: 20px 0;
+	}
